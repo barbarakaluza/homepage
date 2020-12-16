@@ -1,0 +1,28 @@
+body {
+    background-color: #c59f9f;
+}
+
+.main-header {
+    color: #f3ebeb;
+    font-size: 40px;
+}
+.h2-header {
+    color: #612333;
+}
+.img-style {
+    max-width: 500px;
+}
+.main-notes-style {
+    background-color: #7e5f5f;
+    color: #fefefe;
+    display: inline;
+}
+.nav-style {
+    font-size: 30px;
+    background-color: white;
+    display: inline;
+}
+a {
+    color: #612333;
+    text-decoration: none;
+}
