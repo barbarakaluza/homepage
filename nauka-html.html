@@ -7,44 +7,45 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <header>
-      <nav class="nav-style">
-        <a href="index.html">Strona główna</a>
-        <a href="nauka-html.html"> Nauka HTML</a>
+    <header class="header">
+      <nav class="navigation">
+        <a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a>
+        <a class="navigation__link" href="nauka-html.html"> Nauka HTML</a>
       </nav>
     </header>
     <main>
-      <header>
-        <h1 class="main-header">Nauka HTML</h1>
+      <header class="main-header">
+        <h1 class="main-header__heading">Nauka HTML</h1>
+        <img class="main-header__image" src="DSC_1384.jpg" alt="image of cat" />
       </header>
 
-      <section>
-        <h2 class="h2-header">Kim jestem?</h2>
-        <img class="img-style" src="DSC_1384.jpg" />
-        <p>
+      <section class="section-about-me">
+        <h2 class="section-about-me__title">Kim jestem?</h2>
+        
+        <p class="section-about-me__description">
           Na codzien ucze ludzi sztuki forntendu codzien ucze ludzi sztuki
           forntendu.
         </p>
         <p>
           Szkolenia WTF:o ten frontend tutaj
-          <a href="https://cotenfrontend.pl/" target="blank"> link </a>
+          <a class="section-about-me__link" href="https://cotenfrontend.pl/" target="blank"> link </a>
         </p>
       </section>
 
-      <section>
-        <h2 class="main-notes-style">Notatki z WTF - Co to ten frontend?</h2>
-        <article>
-          <h3 class="main-notes-style">Jak stworzyć prawidłowo HTML'a?</h3>
-          <p>
+      <section class="section-notes">
+        <h2 class="section-notes__title">Notatki z WTF - Co to ten frontend?</h2>
+        <article class="section-notes__article">
+          <h3 class="section-notes__article--tittle">Jak stworzyć prawidłowo HTML'a?</h3>
+          <p class="section-notes__article--description">
             Tworzenie zgodnego HTML'a to sztuka zgodnego HTML'a to sztuka
             zgodnego HTML'a to sztuka.
           </p>
         </article>
-        <article>
-          <h3 class="main-notes-style">
+        <article class="section-notes__article">
+          <h3 class="section-notes__article--title">
             Czy nagrywanie szkolenia to prosta sprawa?
           </h3>
-          <p>
+          <p class="section-notes__article--description">
             Na początku myślałem,
             <i>że całe szkolenie nagram w 2 tygonie początku</i> myślałem, że
             <br />całe szkolenie nagram w 2 tygonie.
@@ -52,8 +53,8 @@
         </article>
       </section>
     </main>
-    <footer>
-      <p>
+    <footer class="footer">
+      <p classs="footer__text">
         Strona <b>domowa Maćka Korsana</b>,
         <strong>wszystkie treści pochodzą ze szkolenia WTF:</strong> co to ten
         frontend.
