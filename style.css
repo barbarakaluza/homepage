@@ -24,6 +24,10 @@ body {
   color: #f3ebeb;
   font-size: 40px;
 }
+.main__header--image {
+    border-radius: 16px;
+    border: 10px solid #fff;
+}
 .h2-header {
   color: #612333;
 }
@@ -47,6 +51,7 @@ body {
   border: 2px solid #fff;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
+  border-radius: 16px;
 }
 .nav-style {
   font-size: 30px;
