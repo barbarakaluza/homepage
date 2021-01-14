@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@1&family=Potta+One&display=swap');
+
 html {
   box-sizing: border-box;
 }
@@ -7,32 +9,48 @@ html {
   box-sizing: inherit;
 }
 body {
-  background: rgb(133, 130, 195);
-  background: linear-gradient(
-    90deg,
-    rgba(133, 130, 195, 1) 9%,
-    rgba(235, 202, 202, 1) 52%,
-    rgba(45, 69, 74, 0.8074580173866421) 93%
-  );
+  background-color: #727777;
+  background-image: linear-gradient(342deg, #727777 6%, #e5eae9 67%);
+  font-family: 'Bodoni Moda', serif;
 }
 .main {
   max-width: 1000px;
   margin: 0 auto;
+  display: grid;
+  grid-template-areas: "header header header header"
+  "section section . aside"
+  "footer footer footer footer";
+  grid-template-columns: 50px 400px 54pxpx 1fr;
+  column-gap: 32px;
+  row-gap: 32px;;
 }
 
 .main-header {
   color: #f3ebeb;
   font-size: 40px;
+  grid-area: header;
+  text-align: center;
 }
-.main__header--image {
-    border-radius: 16px;
-    border: 10px solid #fff;
+.main__header--heading{
+  font-family: 'Bodoni Moda', serif;
+  font-weight: lighter;
+  color: rgb(53, 91, 102);
+  font-weight: bold;
+}
+.aside {
+  grid-area: header;
+  grid-column-start: 3;
+  margin-top: 50px;
+  margin-right: 50px;
 }
 .h2-header {
   color: #612333;
 }
 .main__header--image {
   max-width: 500px;
+  margin: 16px;
+  border-radius: 16px;
+  border: 10px solid #fff;
 }
 .main-notes-style {
   background-color: #7e5f5f;
@@ -44,13 +62,12 @@ body {
   justify-content: center;
 }
 .navigation__link {
-  color: rgb(230, 224, 224);
-  background-color: #b88a8a;
+  color: #fff;
+  background-color: rgba(87, 109, 143, 0.658);
   margin: 2px;
-  padding: 16px;
-  border: 2px solid #fff;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: bold;
+  padding: 10px;
+  border: 3px solid #fff;
+  font-family: 'Bodoni Moda', serif;
   border-radius: 16px;
 }
 .nav-style {
@@ -61,8 +78,33 @@ body {
 a {
   color: #612333;
   text-decoration: none;
+
+}
+.about-me {
+  grid-area: aside;
+  padding: 10px;
+}
+.about-me__title {
+  font-family:'Bodoni Moda', serif;
 }
 .about-me__description--js {
-  background-color: black;
+  background-color: rgb(90, 86, 86);
   color: white;
+  text-decoration: none;
 }
+.notes {
+  grid-area: section;
+  background-color: rgba(219, 231, 236, 0.699);
+  padding: 10px;
+}
+.footer {
+  grid-area: footer;
+}
+button {
+  background-color: rgba(87, 109, 143, 0.658);
+  border: 8px solid #fff;
+  border-radius: 16px;
+  font-family: 'Bodoni Moda', serif;
+}
+
+

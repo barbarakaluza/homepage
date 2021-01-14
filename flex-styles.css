@@ -5,20 +5,38 @@ html {
   box-sizing: inherit;
 }
 
-.flex {
-    height: 100vh;
-    border: 3px solid red;
-    background-color: #464175;
-    display: flex;
+body {
+  background-color: hsla(150, 83%, 38%, 0.61);
+  color: #333;
 }
 
+.main {
+  display: grid;
+  grid-template-areas: "header header header"
+  "article . aside"
+  "footer footer footer";
+  grid-template-columns: 1fr 64px 200px;
+  column-gap: 54px;
+  row-gap: 16px;
+}
+.header {
+  grid-area: header;
+}
+.article {
+  grid-area: article;
+}
+.aside {
+  grid-area: aside;
+}
+.footer {
+  grid-area: footer;
+}
 
-.flex_items {
-  border: 3px solid #fff;
-  padding: 16px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-  background-color: #e9f72f;
-  color: blue;
+@media screen and (max-width: 600px) {
+  body {
+    background-color: hotpink;
+  }
+  .header {
+    color: #fff;
+  }
 }
