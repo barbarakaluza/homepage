@@ -1,5 +1,3 @@
-const emptyParagraph = document.querySelector(".about-me__description--js");
-emptyParagraph.innerHTML = `Potrafie zmienić tekst za pomocą JS`;
 
 const deathStar = {
   diameter: 120000,
@@ -59,13 +57,10 @@ switch (myNumber) {
 }
 (humanTwo.age == humanOne.age)? console.log("Jest równy") : console.log("Nie jest równy");
 
-const button = document.querySelector('.action--js');
 
-console.log(button);
+const hamburger = document.querySelector('.hamburger--js');
 
-const myClick = () => {
-  const mainHeading = document.querySelector('.main__header--heading');
-  mainHeading.innerHTML = `Zmieniamy nagłówek przez kliknięcie`;
-}
-
-button.addEventListener('mouseenter', myClick);
+hamburger.addEventListener('click', () => {
+  const nav = document.querySelector('.navigation--js');
+  nav.classList.toggle('navigation--open');
+});
