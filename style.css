@@ -41,20 +41,21 @@ body {
  display: block;
  margin: 0 0 16px;
 }
-.hamburger {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background-color: #fff;
-  border: 0;
-}
+
 .menu--img {
   position: absolute;
-  top: -12px;
-  left: -16px;
+  top: 10px;
   background-color: #fff;
+  right: 10px;
   border: 0;
-  width: 40px;
+  
+}
+.hamburger--js {
+  position: absolute;
+  top: 10px;
+  background-color: #fff;
+  right: 10px;
+  border: 0;
 }
 
 .main {
@@ -81,6 +82,9 @@ body {
 .main__header--image {
  max-width: 100%;
 }
+.kurs__title {
+  color: rgb(90, 74, 74);
+}
 .about-me {
 
 }
@@ -91,6 +95,7 @@ body {
 .about-me__description {
   
 }
+
 
 .aside__title {
   color: rgb(141, 54, 54);
@@ -104,10 +109,18 @@ body {
   color: rgb(131, 99, 99);
 
 }  
-notes__article--description {
+.notes__article--description {
   border-bottom: 1px solid white;
 }
-
+.notes-of-curse__title {
+  color: rgb(194, 124, 124)
+}
+.notes-of-curse__week--summary {
+  border-bottom: 1px solid #fff;
+}
+.summary-list {
+  list-style-type: circle;
+}
 @media screen and (min-width: 640px) {
 
 }
