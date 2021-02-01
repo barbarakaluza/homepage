@@ -26,9 +26,8 @@ body {
 }
 
 .navigation {
-  padding: 16px;
+ padding: 16px;
  display: none;
- transition-duration: 4s;
 }
 
 .navigation--open {
@@ -37,7 +36,7 @@ body {
 
 .navigation__link {
  text-decoration: none;
- color: rgb(219, 129, 129);
+ color: rgb(226, 170, 170);
  display: block;
  margin: 0 0 16px;
 }
@@ -83,7 +82,7 @@ body {
  max-width: 100%;
 }
 .kurs__title {
-  color: rgb(90, 74, 74);
+  color: rgb(156, 136, 136);
 }
 .about-me {
 
@@ -121,6 +120,47 @@ body {
 .summary-list {
   list-style-type: circle;
 }
+.footer {
+  color: rgb(187, 104, 104);
+}
 @media screen and (min-width: 640px) {
 
+  .main {
+    display: grid;
+    grid-template-columns: [first] 1fr [second] 64px [thrid] 300px;
+    grid-template-areas: "header header header"
+    "article . aside" "footer footer footer";
+  }
+
+  .main__header {
+     grid-area: header;
+     padding: 16px;
+   }
+   
+ .about-me {
+   grid-area: aside;
+   padding: 16px;
+ }
+
+ .notes {
+   grid-area: article;
+   padding: 16px;
+ }
+ .main__header--heading {
+  font-size: 54px;
+ }
+ .navigation {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-left: 32px;
+   padding-right: 32px;
+ }
+ .navigation__link {
+   padding: 16px;
+   margin-bottom: 0;
+ }
+ .hamburger--js {
+   display: none;
+ }
 }
