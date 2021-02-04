@@ -28,17 +28,15 @@ body {
 .navigation {
  padding: 16px;
  display: none;
-}
-
-.navigation--open {
-  display: block;
-}
-
-.navigation__link {
- text-decoration: none;
- color: rgb(226, 170, 170);
- display: block;
- margin: 0 0 16px;
+ &--open {
+    display: block;
+  }
+  &__link {
+    text-decoration: none;
+    color: rgb(226, 170, 170);
+    display: block;
+    margin: 0 0 16px;
+   }
 }
 
 .menu--img {
@@ -61,42 +59,38 @@ body {
   margin: 60px auto 0;
   font-family: 'Montserrat', sans-serif;
   color: rgb(124, 110, 110);
-}
+  &__header--heading {
+    color: rgb(185, 165, 165);
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 32px;
+    border-bottom: 1px solid white;
+  }
+  &__header--heading--name {
+    color: rgb(139, 132, 132);
+  }
+  &__header--heading-hey {
+    margin-bottom: 16px;
+    font-family: 'Monoton', cursive;
+    letter-spacing: 2px;
+  }
+  &__header--image {
+    max-width: 100%;
+   }
 
-.main__header--heading {
-  color: rgb(185, 165, 165);
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 32px;
-  border-bottom: 1px solid white;
-}
-.main__header--heading--name {
-  color: rgb(139, 132, 132);
-}
-.main__header--heading-hey {
-  margin-bottom: 16px;
-  font-family: 'Monoton', cursive;
-  letter-spacing: 2px;
-}
-
-.main__header--image {
- max-width: 100%;
 }
 .kurs__title {
   color: rgb(156, 136, 136);
 }
 .about-me {
+   &__title {
+    color: rgb(179, 118, 118);
+    border-bottom: 1px solid white;
+    }
+   &__title::before {
+    content: "💻 ";
+  }
+}
 
-}
-.about-me__title {
-  color: rgb(179, 118, 118);
-  border-bottom: 1px solid white;
-}
-.about-me__title::before {
-  content: "💻 ";
-}
-.about-me__description {
-  
-}
 .aside__title {
   color: rgb(141, 54, 54);
   border-bottom: 1px solid white;
@@ -104,20 +98,26 @@ body {
 .notes__title {
   color: rgb(151, 119, 119);
   border-bottom: 1px solid white;
+  &::before {
+    content: "❓ ";
+  }
 }
-.notes__title::before {
-  content: "❓ ";
-}
+
 .notes__article--title{
   color: rgb(131, 99, 99);
   border-bottom: 1px solid white;
 }  
-.notes-of-curse__title {
-  color: rgb(194, 124, 124)
+
+.notes-of-curse{
+    &__title {
+        color: rgb(194, 124, 124)
+      }
+      &__week--summary {
+        border-bottom: 1px solid #fff;
+      }
+
 }
-.notes-of-curse__week--summary {
-  border-bottom: 1px solid #fff;
-}
+
 .summary-list {
   list-style-type: circle;
 }
@@ -131,12 +131,14 @@ body {
     grid-template-columns: [first] 1fr [second] 64px [thrid] 300px;
     grid-template-areas: "header header header"
     "article . aside" "footer footer footer";
+    &__header {
+        grid-area: header;
+        padding: 16px;
+        &--heading {
+            font-size: 54px;
+           }
+      }
   }
-
-  .main__header {
-     grid-area: header;
-     padding: 16px;
-   }
    
  .about-me {
    grid-area: aside;
@@ -147,21 +149,21 @@ body {
    grid-area: article;
    padding: 16px;
  }
- .main__header--heading {
-  font-size: 54px;
- }
+ 
  .navigation {
    display: flex;
    justify-content: space-around;
    align-items: center;
    padding-left: 32px;
    padding-right: 32px;
+   &__link {
+    padding: 16px;
+    margin-bottom: 0;
+  }
  }
- .navigation__link {
-   padding: 16px;
-   margin-bottom: 0;
- }
+ 
  .hamburger--js {
-   display: none;
+    display: none;
  }
+ 
 }

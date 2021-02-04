@@ -1,0 +1,26 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "sass": "node-sass -w scss/style.scss style.css",
+    "batman": "npx batmansay HEY",
+    "cow": "npx cowsay SIEMA",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barbarakaluza/homepage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barbarakaluza/homepage/issues"
+  },
+  "homepage": "https://github.com/barbarakaluza/homepage#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
