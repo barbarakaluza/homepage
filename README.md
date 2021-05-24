@@ -1,13 +1,8 @@
 
 
-# *Pierwszy projekt* #
-## *Tworzony przy pomocy kursu WTF:Co ten frontend, Maćka Korsana* ##
+# My first project created during the course *WTF:Co ten Frontend Maciek Korsan* 🛠
 
-### *Co zawiera projekt?* ###
-- *informacje o moich zainteresowaniach*
-- *informacje o mnie*
-- *opowieść o przygodzie z frontendem* 
-- *dziennik kursu* 
-
-
->”Czasami bardziej opłaca się zostać w łóżku w poniedziałek niż spędzić resztę tygodnia, debugując poniedziałkowy kod”. – Christopher Thompson
+## What is this?:
+- diary of course, 📓
+- draft, 📝
+- the project in which I practiced 📐
